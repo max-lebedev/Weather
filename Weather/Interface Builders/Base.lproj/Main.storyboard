@@ -20,36 +20,11 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gSK-q1-rkb">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HJF-go-J4r">
-                                <rect key="frame" x="315.5" y="811" width="82" height="31"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ufa" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ei1-aO-22z">
-                                        <rect key="frame" x="0.0" y="0.0" width="44" height="31"/>
-                                        <color key="tintColor" name="infoColor"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
-                                        <color key="textColor" name="infoColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqV-nb-jMr">
-                                        <rect key="frame" x="52" y="0.5" width="30" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="nn0-ga-BaH"/>
-                                            <constraint firstAttribute="width" secondItem="BqV-nb-jMr" secondAttribute="height" multiplier="30:31" id="sGb-um-93w"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <color key="tintColor" name="infoColor"/>
-                                        <state key="normal" backgroundImage="magnifyingglass.circle.fill" catalog="system"/>
-                                        <connections>
-                                            <action selector="searchPressed:" destination="uBR-NO-G2g" eventType="touchUpInside" id="adx-gm-cU6"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bL0-3v-d04">
                                 <rect key="frame" x="119.5" y="64" width="175.5" height="293.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nosign" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lsp-5B-1of">
-                                        <rect key="frame" x="2.5" y="0.5" width="170" height="169"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lsp-5B-1of">
+                                        <rect key="frame" x="2.5" y="3" width="170" height="164.5"/>
                                         <color key="tintColor" name="infoColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="170" id="Jyw-SO-JHr"/>
@@ -97,18 +72,43 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="HJF-go-J4r">
+                                <rect key="frame" x="188" y="742" width="186" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moscow" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ei1-aO-22z">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="31"/>
+                                        <color key="tintColor" name="infoColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="38"/>
+                                        <color key="textColor" name="infoColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqV-nb-jMr">
+                                        <rect key="frame" x="156" y="0.5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="nn0-ga-BaH"/>
+                                            <constraint firstAttribute="width" secondItem="BqV-nb-jMr" secondAttribute="height" multiplier="30:31" id="sGb-um-93w"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="tintColor" name="infoColor"/>
+                                        <state key="normal" backgroundImage="magnifyingglass.circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="searchPressed:" destination="uBR-NO-G2g" eventType="touchUpInside" id="adx-gm-cU6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l30-2a-78K"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="gSK-q1-rkb" secondAttribute="bottom" id="2oT-5Q-Oa8"/>
                             <constraint firstItem="bL0-3v-d04" firstAttribute="centerX" secondItem="l30-2a-78K" secondAttribute="centerX" id="92T-1K-lHO"/>
-                            <constraint firstItem="l30-2a-78K" firstAttribute="trailing" secondItem="HJF-go-J4r" secondAttribute="trailing" constant="16.5" id="Ea9-Oi-gAp"/>
+                            <constraint firstItem="l30-2a-78K" firstAttribute="trailing" secondItem="HJF-go-J4r" secondAttribute="trailing" constant="40" id="Ea9-Oi-gAp"/>
                             <constraint firstItem="gSK-q1-rkb" firstAttribute="top" secondItem="zKC-oE-bn9" secondAttribute="top" id="QFf-wT-84a"/>
                             <constraint firstItem="bL0-3v-d04" firstAttribute="top" secondItem="l30-2a-78K" secondAttribute="top" constant="20" id="YcT-QC-ZWT"/>
                             <constraint firstItem="l30-2a-78K" firstAttribute="trailing" secondItem="gSK-q1-rkb" secondAttribute="trailing" id="p7H-Hp-8AW"/>
                             <constraint firstItem="gSK-q1-rkb" firstAttribute="leading" secondItem="l30-2a-78K" secondAttribute="leading" id="urh-1E-aTr"/>
-                            <constraint firstItem="l30-2a-78K" firstAttribute="bottom" secondItem="HJF-go-J4r" secondAttribute="bottom" constant="20" id="wog-wf-Luu"/>
+                            <constraint firstItem="l30-2a-78K" firstAttribute="bottom" secondItem="HJF-go-J4r" secondAttribute="bottom" constant="89" id="wog-wf-Luu"/>
                         </constraints>
                     </view>
                     <connections>
@@ -125,8 +125,8 @@
     </scenes>
     <resources>
         <image name="background" width="375" height="667"/>
+        <image name="cloud.fill" catalog="system" width="128" height="84"/>
         <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="nosign" catalog="system" width="128" height="121"/>
         <namedColor name="infoColor">
             <color red="0.95099997520446777" green="1" blue="0.66900002956390381" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
